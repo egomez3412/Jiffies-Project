@@ -1,0 +1,1 @@
+cmd_/home/osc/final-src-osc10e/project1/jiffies.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/osc/final-src-osc10e/project1/jiffies.ko /home/osc/final-src-osc10e/project1/jiffies.o /home/osc/final-src-osc10e/project1/jiffies.mod.o

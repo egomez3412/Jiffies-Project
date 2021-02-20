@@ -1,0 +1,1 @@
+cmd_/home/osc/final-src-osc10e/project1/seconds.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/osc/final-src-osc10e/project1/seconds.ko /home/osc/final-src-osc10e/project1/seconds.o /home/osc/final-src-osc10e/project1/seconds.mod.o
