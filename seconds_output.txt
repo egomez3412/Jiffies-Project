@@ -1,0 +1,25 @@
+osc@ubuntu:~/final-src-osc10e/project1$ sudo insmod seconds.ko
+osc@ubuntu:~/final-src-osc10e/project1$ dmesg
+[  418.755923] /proc/seconds created
+osc@ubuntu:~/final-src-osc10e/project1$ cat /proc/seconds
+
+Kernal is Running: 7 sec
+osc@ubuntu:~/final-src-osc10e/project1$ cat /proc/seconds
+
+Kernal is Running: 10 sec
+osc@ubuntu:~/final-src-osc10e/project1$ cat /proc/seconds
+
+Kernal is Running: 12 sec
+osc@ubuntu:~/final-src-osc10e/project1$ cat /proc/seconds
+
+Kernal is Running: 15 sec
+osc@ubuntu:~/final-src-osc10e/project1$ cat /proc/seconds
+
+Kernal is Running: 17 sec
+osc@ubuntu:~/final-src-osc10e/project1$ cat /proc/seconds
+
+Kernal is Running: 19 sec
+osc@ubuntu:~/final-src-osc10e/project1$ sudo rmmod seconds
+osc@ubuntu:~/final-src-osc10e/project1$ dmesg
+[  418.755923] /proc/seconds created
+[  449.442128] /proc/seconds removed

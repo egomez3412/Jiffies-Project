@@ -1,0 +1,17 @@
+osc@ubuntu:~/final-src-osc10e/project1$ sudo insmod jiffies.ko
+osc@ubuntu:~/final-src-osc10e/project1$ cat /proc/jiffies
+
+Current Jiffie Value: 4294975309
+osc@ubuntu:~/final-src-osc10e/project1$ cat /proc/jiffies
+
+Current Jiffie Value: 4294975811
+osc@ubuntu:~/final-src-osc10e/project1$ cat /proc/jiffies
+
+Current Jiffie Value: 4294976075
+osc@ubuntu:~/final-src-osc10e/project1$ cat /proc/jiffies
+
+Current Jiffie Value: 4294976405
+osc@ubuntu:~/final-src-osc10e/project1$ sudo rmmod jiffies
+osc@ubuntu:~/final-src-osc10e/project1$ dmesg
+[  202.892652] /proc/jiffies created
+[  306.365850] /proc/jiffies removed
