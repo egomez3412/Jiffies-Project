@@ -1,25 +1,33 @@
-osc@ubuntu:~/final-src-osc10e/project1$ sudo insmod seconds.ko
-osc@ubuntu:~/final-src-osc10e/project1$ dmesg
-[  418.755923] /proc/seconds created
-osc@ubuntu:~/final-src-osc10e/project1$ cat /proc/seconds
+beginning script...
+Module name is: seconds.ko
 
-Kernal is Running: 7 sec
-osc@ubuntu:~/final-src-osc10e/project1$ cat /proc/seconds
+        sleeping for 1 second...
+
+Kernal is Running: 1 sec
+        sleeping for 2 seconds
+...
+
+Kernal is Running: 3 sec
+        sleeping for 3 seconds
+...
+
+Kernal is Running: 6 sec
+        sleeping for 4 seconds
+...
 
 Kernal is Running: 10 sec
-osc@ubuntu:~/final-src-osc10e/project1$ cat /proc/seconds
 
-Kernal is Running: 12 sec
-osc@ubuntu:~/final-src-osc10e/project1$ cat /proc/seconds
+[ 3363.373879] /proc/seconds created
+[ 3363.373881] I proc_init(), Jiffies is: 4295732997 and HZ is: 250
+[ 3363.373882] I proc_init(), seconds is: 0 s
+[ 3364.378418] 
+               Kernal is Running: 1 sec
+[ 3366.380234] 
+               Kernal is Running: 3 sec
+[ 3369.385525] 
+               Kernal is Running: 6 sec
+[ 3373.391179] 
+               Kernal is Running: 10 sec
+[ 3373.395207] /proc/seconds removed
 
-Kernal is Running: 15 sec
-osc@ubuntu:~/final-src-osc10e/project1$ cat /proc/seconds
-
-Kernal is Running: 17 sec
-osc@ubuntu:~/final-src-osc10e/project1$ cat /proc/seconds
-
-Kernal is Running: 19 sec
-osc@ubuntu:~/final-src-osc10e/project1$ sudo rmmod seconds
-osc@ubuntu:~/final-src-osc10e/project1$ dmesg
-[  418.755923] /proc/seconds created
-[  449.442128] /proc/seconds removed
+...end of script

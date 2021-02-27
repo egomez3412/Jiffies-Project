@@ -19,7 +19,6 @@
 #include <asm/param.h>
 
 #define BUFFER_SIZE 128
-
 #define PROC_NAME "jiffies"
 
 /**
@@ -41,9 +40,8 @@ int proc_init(void)
         // the following function call is a wrapper for
         // proc_create_data() passing NULL as the last argument
         proc_create(PROC_NAME, 0, NULL, &proc_ops);
-
         printk(KERN_INFO "/proc/%s created\n", PROC_NAME);
-
+        
 	return 0;
 }
 
